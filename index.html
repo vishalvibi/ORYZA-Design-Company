@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORYZA Design Company</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #7b172e; /* matching the burgundy background in logo */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ade8f4;
+    }
+    .logo-container {
+      max-width: 300px;
+      margin: 2rem auto;
+    }
+    .logo-container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 0 5px #00c6c7);
+    }
+    .logo-text-title {
+      font-weight: 700;
+      font-size: 2.25rem; /* text-4xl */
+      text-align: center;
+      margin-top: 0.5rem;
+      letter-spacing: 0.05em;
+      color: #2dd4bf;
+      text-shadow: 0 0 10px #00c6c7;
+    }
+    .logo-text-subtitle {
+      font-weight: 400;
+      font-size: 1rem; /* text-base */
+      letter-spacing: 0.2em;
+      text-align: center;
+      color: #5eead4;
+      text-shadow: 0 0 5px #00c6c7;
+      margin-bottom: 2rem;
+    }
+    .services-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .services-title {
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: #00f5d4;
+      text-align: center;
+      text-shadow: 0 0 6px #20c997;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.1em;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: linear-gradient(to bottom right, #0d7377, #14ffec);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgb(0 255 237 / 0.4);
+      padding: 1.5rem;
+      color: #070f14;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      user-select: none;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px #32ffc8cc;
+    }
+    .contact-section {
+      background-color: #092326cc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      border-radius: 12px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 20px #00d7bbcc;
+    }
+    .contact-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #50fa7b;
+      text-shadow: 0 0 8px #0fdb7a;
+    }
+    .contact-number {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #d1f7e0;
+      letter-spacing: 0.05em;
+      user-select: text;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container" role="banner" aria-label="ORYZA Website Design Company logo">
+      <img 
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cb399658-5d15-4e47-ae85-4a01a50685ac.png" 
+        alt="Modern symmetric blue gradient geometric floral logo on burgundy background, representing ORYZA Website Design Company"
+        onerror="this.style.display='none'"
+      />
+      <h1 class="logo-text-title">ORYZA</h1>
+      <p class="logo-text-subtitle">DESIGN COMPANY</p>
+    </div>
+  </header>
+  <main>
+    <section class="services-section" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="services-title">Our Services</h2>
+      <div class="services-grid" role="list">
+        <div class="service-card" role="listitem" tabindex="0">Invitation Design</div>
+        <div class="service-card" role="listitem" tabindex="0">Photo Editing</div>
+        <div class="service-card" role="listitem" tabindex="0">Video Editing</div>
+        <div class="service-card" role="listitem" tabindex="0">Website Creating</div>
+      </div>
+    </section>
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="contact-title">Contact Us</h2>
+      <p class="contact-number" aria-label="Contact phone number">Phone: 9360752934,8438638823</p>
+    </section>
+  </main>
+</body>
+</html>
+
